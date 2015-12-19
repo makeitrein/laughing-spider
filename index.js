@@ -12,7 +12,7 @@ app.get('/scrape', function (req, res) {
   var url;
   var urls      = [];
   var json      = {links: []};
-  var page      = 2350;
+  var page      = 0;
   var outputUrl =  "./" + String(Date.now()) + ".txt";
   
   var scrapeInterval = setInterval(newPageScrape, 2000);
